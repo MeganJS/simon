@@ -6,5 +6,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SIMON</title>
     </head>
-
+    <body>
+        <header>
+            <h1>Simon<sup>&reg;</sup></h1>
+        </header>
+        <main>
+            <p>Welcome! Log in below or select the guest option to proceed.</p>
+            <!--these two options won't really do anything right now but they will later-->
+            <section>
+                <!--This should take you to play.html when you hit submit-->
+                <form method="get" action="play.html">
+                    <label for="Username">Username</label>
+                    <input type="text" id="Username" placeholder="(username here)" />
+                    <button type="submit">Login</button>
+                </form>
+                <form method="get" action="play.html">
+                    <button type="submit">Continue as guest</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <p>Created by Megan S.</p> 
+            <br>
+            <a href="https://github.com/MeganJS/simon.git">GitHub</a>
+        </footer>
+    </body>
 </html>

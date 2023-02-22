@@ -37,10 +37,11 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <div class="sessionInfo-fw-semibold">
+        <main class="container-fluid" id="playPage">
+            <!--simon game set up-->
+            <div class="container-fluid" id="playSession">
                 <div class="players">
-                    <!--everyone is a guest for now-->
+                        <!--everyone is a guest for now-->
                     Player:
                     <span class="Username">Mystery Player</span>
                 </div>
@@ -48,8 +49,8 @@
                     <label for="count">Score:</label>
                     <input class="form-control-sm" type="text" id="count" value="--" readonly />
                 </div>
+                <button type="button" class="btn btn-sm" id="resetButton">Reset</button>
             </div>
-            <!--simon game set up-->
             <div class="game">
                 <div class="button-container">
                     <button class="button-top-left"></button>
@@ -57,9 +58,6 @@
                     <button class="button-bottom-left"></button>
                     <button class="button-bottom-right"></button>
                 </div>
-            </div>
-            <div class="container-fluid">
-                <button type="button" class="btn btn-sm" id="resetButton">Reset</button>
             </div>
         </main>
         <footer>

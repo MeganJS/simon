@@ -38,80 +38,28 @@
             </nav>
         </header>
         <main>
-            <div class="players">
-                <!--everyone is a guest for now-->
-                Player:
-                <span class="Username">Mystery Player</span>
+            <div class="sessionInfo-fw-semibold">
+                <div class="players">
+                    <!--everyone is a guest for now-->
+                    Player:
+                    <span class="Username">Mystery Player</span>
+                </div>
+                <div class="scoreInfo">
+                    <label for="count">Score:</label>
+                    <input class="form-control-sm" type="text" id="count" value="--" readonly />
+                </div>
             </div>
-            <br>
-            <div>
-                <label for="count">Score is</label>
-                <input type="text" id="count" value="--" readonly />
+            <!--simon game set up-->
+            <div class="game">
+                <div class="button-container">
+                    <button class="button-top-left"></button>
+                    <button class="button-top-right"></button>
+                    <button class="button-bottom-left"></button>
+                    <button class="button-bottom-right"></button>
+                </div>
             </div>
-            <br>
-            <div>
-                <table>
-                    <tr>
-                        <td>
-                            <button>
-                                <svg
-                                    aria-hidden="true"
-                                    viewBox="0 0 100 100"
-                                    height="100"
-                                    width="100"
-                                    >
-                                <!--svg stuff for a quarter circle-->
-                                    <path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="green" />
-                                </svg>
-                            </button>
-                        </td>
-                        <td>
-                            <button>
-                                <svg
-                                    aria-hidden="true"
-                                    viewBox="0 0 100 100"
-                                    height="100"
-                                    width="100"
-                                    >
-                                <!--svg stuff for a quarter circle-->
-                                    <path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="red" />
-                                </svg>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button>
-                                <svg
-                                    aria-hidden="true"
-                                    viewBox="0 0 100 100"
-                                    height="100"
-                                    width="100"
-                                    >
-                                    <!--svg stuff for a quarter circle-->
-                                    <path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="blue" />
-                                </svg>
-                            </button>
-                        </td>
-                        <td>
-                            <button>
-                                <svg
-                                    aria-hidden="true"
-                                    viewBox="0 0 100 100"
-                                    height="100"
-                                    width="100"
-                                    >
-                                <!--svg stuff for a quarter circle-->
-                                    <path d="M 95,5 5,5 5,95 Q 95,95 95,5" fill="yellow" />
-                                </svg>
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <br>
-            <div>
-                <button>Reset</button>
+            <div class="container-fluid">
+                <button type="button" class="btn btn-sm" id="resetButton">Reset</button>
             </div>
         </main>
         <footer>

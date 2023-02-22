@@ -27,9 +27,9 @@ body.index h1 {
     justify-content: center;
 
     animation-name: colors;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps(1, jump-start);
+    animation-timing-function: linear;
 }
 
 @keyframes colors{
@@ -92,5 +92,43 @@ body.index main{
 
 .guestButton:hover{
     background-color: blueviolet;
+}
+
+.navbar{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+}
+
+#aboutButton {
+    background-color: crimson;
+    color: white;
+}
+
+#playButton {
+    background-color: gold;
+}
+
+#scoresButton {
+    background-color: forestgreen;
+    color: white;
+}
+
+#logoutButton{
+    background-color: navy;
+    color: white;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    margin:4px;
 }
 

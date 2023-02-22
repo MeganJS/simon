@@ -6,18 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Scores</title>
         <link rel="stylesheet" href="main.css"/>
+        <!--bootstrap css link-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
     </head>
     <body>
         <header>
-            <h1>Simon<sup>&reg;</sup></h1>
             <!--now we will have the navigation links-->
-            <nav>
-                <h2>Feel free to take a look around.</h2>
-                <menu>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="play.html">Play</a></li>
-                    <li><a href="index.html">Logout</a></li>
-                </menu>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <ul class="nav">
+                        <li class="navbar-brand"><h1>Simon<sup>&reg;</sup></h1></li>
+                        <li class="nav-item">
+                            <a class="btn" href="play.html" role="button" id="playButton">Play</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn" href="about.html" role="button" id="aboutButton">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn" href="index.html" role="button" id="logoutButton">Logout</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <main>

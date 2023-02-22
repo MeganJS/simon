@@ -4,95 +4,6 @@
     font-family: 'Abel', sans-serif;
 }
 
-body.index {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-    background-color: ghostwhite;
-}
-
-body.index header {
-    flex: 0.9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: xx-large;
-}
-
-body.index h1 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    animation-name: colors;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes colors{
-    from{
-        color:crimson;
-    }
-    25%{
-        color:gold;
-    }
-    50%{
-        color:forestgreen;
-    }
-    75%{
-        color:navy;
-    }
-    
-    to{
-        color: crimson;
-    }
-}
-
-body.index main{
-    flex: 1.1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: baseline;
-    font-size: large;
-}
-
-.welcome {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.6em;
-}
-
-.login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.loginButton{
-    background-color: black;
-    color: white;
-    margin: 1px;
-}
-
-.loginButton:hover{
-    background-color:tomato;
-}
-
-.guestButton {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    margin: 1px;
-}
-
-.guestButton:hover{
-    background-color: blueviolet;
-}
 
 .navbar{
     display: flex;
@@ -132,3 +43,132 @@ body.index main{
     margin:4px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    flex: 0 80px;
+}
+
+main {
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    flex: 0 30px;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white
+}
+
+
+body.index {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: ghostwhite;
+}
+
+body.index header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: xx-large;
+}
+
+body.index h1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    animation-name: colors;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes colors{
+    from{
+        color:crimson;
+    }
+    25%{
+        color:gold;
+    }
+    50%{
+        color:forestgreen;
+    }
+    75%{
+        color:navy;
+    }
+    
+    to{
+        color: crimson;
+    }
+}
+
+body.index main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-size: large;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6em;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginButton{
+    background-color: black;
+    color: white;
+    margin: 1px;
+}
+
+.loginButton:hover{
+    background-color:tomato;
+}
+
+.guestButton {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    margin: 1px;
+}
+
+.guestButton:hover{
+    background-color: blueviolet;
+}
+
+
+@media (max-height: 600px) {
+    footer{
+        display: none;
+    }
+    main{
+        flex: 1 calc(100vh - 80px);
+    }
+}

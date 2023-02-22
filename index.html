@@ -12,17 +12,17 @@
             <h1>Simon<sup>&reg;</sup></h1>
         </header>
         <main>
-            <p>Welcome! Log in below or select the guest option to proceed.</p>
+            <div class="welcome">Welcome! Log in below or select the guest option to proceed.</div>
             <!--these two options won't really do anything right now but they will later-->
-            <section>
+            <section class="login">
                 <!--This should take you to play.html when you hit submit-->
                 <form method="get" action="play.html">
                     <label for="Username">Username:</label>
                     <input type="text" id="Username" placeholder="(username here)" />
-                    <button type="submit">Login</button>
+                    <button class="loginButton" type="submit">Login</button>
                 </form>
                 <form method="get" action="play.html">
-                    <button type="submit">Continue as Guest</button>
+                    <button class="guestButton" type="submit">Continue as Guest</button>
                 </form>
             </section>
         </main>

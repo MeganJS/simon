@@ -9,25 +9,88 @@ body.index {
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    background-color: ghostwhite;
 }
 
 body.index header {
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: xx-large;
+}
+
+body.index h1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    animation-name: colors;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, jump-start);
+}
+
+@keyframes colors{
+    from{
+        color:crimson;
+    }
+    25%{
+        color:gold;
+    }
+    50%{
+        color:forestgreen;
+    }
+    75%{
+        color:navy;
+    }
+    
+    to{
+        color: crimson;
+    }
+}
+
+body.index main{
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    font-size: large;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6em;
+}
+
+.login {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-body.index h1 {
-    flex: 1;
-    display: flex;
-    align-items: end;
-    justify-content: center;
+
+.loginButton{
+    background-color: black;
+    color: white;
+    margin: 1px;
 }
 
-body.index main{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
+.loginButton:hover{
+    background-color:tomato;
+}
+
+.guestButton {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    margin: 1px;
+}
+
+.guestButton:hover{
+    background-color: blueviolet;
 }
 

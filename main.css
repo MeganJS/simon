@@ -1,1 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+* {
+    font-family: 'Abel', sans-serif;
+}
+
+body.index {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+body.index header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.index h1 {
+    flex: 1;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+body.index main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
 

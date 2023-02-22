@@ -5,8 +5,9 @@
         <!--this should keep things from scaling automatically-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SIMON</title>
+        <link rel="stylesheet" href="main.css"/>
     </head>
-    <body>
+    <body class="index">
         <header>
             <h1>Simon<sup>&reg;</sup></h1>
         </header>
@@ -16,12 +17,12 @@
             <section>
                 <!--This should take you to play.html when you hit submit-->
                 <form method="get" action="play.html">
-                    <label for="Username">Username</label>
+                    <label for="Username">Username:</label>
                     <input type="text" id="Username" placeholder="(username here)" />
                     <button type="submit">Login</button>
                 </form>
                 <form method="get" action="play.html">
-                    <button type="submit">Continue as guest</button>
+                    <button type="submit">Continue as Guest</button>
                 </form>
             </section>
         </main>

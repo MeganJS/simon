@@ -11,6 +11,9 @@
     justify-content: center;
     align-items: center;
     background-color: darkslategrey;
+}
+
+.navbar-brand h1{
     color: white;
 }
 
@@ -61,7 +64,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:lightslategray;
+    background-color:ghostwhite;
     color:black;
     font-size: 4vh;
 }
@@ -96,29 +99,38 @@ footer div{
 /*stuff for play page*/
 #playPage {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
 #playSession {
-    flex:1;
+    flex: 0 30px;
     display: flex;
     flex-direction: row;
-    align-items: start;
-    justify-content: start;
+    align-items: baseline;
+    font-size: large;
+    font-weight:bold;
+}
+.players{
+    padding: 4px;
+    border-right: thin solid lightslategray;
+}
+.scoreInfo{
+    padding: 4px;
 }
 #resetButton{
     background-color: indigo;
     color: white;
-    float: right;
+    margin: 4px;
 }
 
+
 .game {
-    position: absolute;
-    width: 75vw;
-    height: 75vw;
+    flex: 4;
+    width: 70vw;
+    height: 70vw;
     min-width: 350px;
     min-height:350px;
-    max-width: min(75vmin, 1000px);
-    max-height: min(75vmin, 1000px);
+    max-width: min(70vmin, 1000px);
+    max-height: min(70vmin, 1000px);
 }
 .button-container{
     width: 100%;
@@ -133,7 +145,7 @@ footer div{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10% 10% 10% 10%;
-    border: thick solid white;
+    border: none;
 }
 .button-top-right {
     padding: 0;
@@ -141,7 +153,7 @@ footer div{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10% 10% 10% 10%;
-    border: thick solid black;
+    border: none;
 }
 .button-bottom-left {
     padding: 0;
@@ -149,7 +161,7 @@ footer div{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10% 10% 10% 10%;
-    border: thick solid black;
+    border: none;
 }
 .button-bottom-right {
     padding: 0;
@@ -157,7 +169,7 @@ footer div{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10% 10% 10% 10%;
-    border: thick solid white;
+    border: none;
 }
 
 /*stuff for login page*/

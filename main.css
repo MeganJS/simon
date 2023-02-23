@@ -111,10 +111,10 @@ footer div{
 }
 .players{
     padding: 4px;
-    border-right: thin solid lightslategray;
 }
 .scoreInfo{
     padding: 4px;
+    border-left: thin solid lightslategray;
 }
 #resetButton{
     background-color: indigo;
